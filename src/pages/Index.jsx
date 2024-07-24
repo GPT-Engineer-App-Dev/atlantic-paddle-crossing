@@ -1,10 +1,24 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Button } from "@/components/ui/button";
+import Header from "../components/Header";
+import HeroSection from "../components/HeroSection";
+import AboutSection from "../components/AboutSection";
+import BlogSection from "../components/BlogSection";
+import GallerySection from "../components/GallerySection";
+import ContactSection from "../components/ContactSection";
+import Footer from "../components/Footer";
 
 const Index = () => {
   return (
-    <div className="text-center">
-      <h1 className="text-3xl">Your Blank Canvas</h1>
-      <p>Chat with the agent to start making edits.</p>
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <main className="flex-grow">
+        <HeroSection />
+        <AboutSection />
+        <BlogSection />
+        <GallerySection />
+        <ContactSection />
+      </main>
+      <Footer />
     </div>
   );
 };
